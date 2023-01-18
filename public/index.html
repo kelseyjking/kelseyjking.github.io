@@ -1,108 +1,133 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
+<html lang="en">
+  
 
+<head>
+    <meta charset="UTF-8">
+    <!-- Connect Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <title>Kelsey King's links</title>
     <style>
       body {
         padding-top: 40px;
         padding-bottom: 40px;
-        background-color: #004643;
+        background-color: #7db6a4;
+        opacity: 1;
+        background-image:  radial-gradient(#ffffff 0.5px, transparent 0.5px), radial-gradient(#ffffff 0.5px, #7db6a4 0.5px);
+        background-size: 20px 20px;
+        background-position: 0 0,10px 10px;
+        display: flex;
+        justify-content: center;
       }
-
+  
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+  
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+  
       .name {
-        color: #fffffe;
+        color: #0d413e;
+        display: flex;
+        justify-content: center;
       }
-
+  
       .social-icons a {
         color: #fffffe;
-        text-decoration: none;
+        text-decoration: none
       }
-
+  
       .link {
-        background-color: #f9bc60;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        padding: 5px;
       }
-
+  
       .link a {
-        color: #001e1d;
+        color: #0d413e;
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+  
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 650px;
+        flex-grow: 1;
+      }
+  
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
       }
     </style>
   </head>
-  <body>
-    
-  
-    <div class="banner">
-      <img src="/thumbnails/kelsey.jpeg" alt="Kelsey King headshot" class="banner-image">
-      <style>
-        .banner-image {
-          width: 128px;
-          height: 128px;
-          border-radius: 128px;
-          object-fit: cover;
-        }
-      </style>
-    </div>
-    
-    <div class="name">
-      Kelsey King
-    </div>
-    
-    <div class="social-icons">
-      <a href="https://github.com/kelseyjking" target="_blank">
-        GitHub
-      </a>
-    
-      <a href="https://www.linkedin.com/in/kelseyjadeking/" target="_blank">
-        LinkedIn
-      </a>
-    
-      <a href="https://twitter.com/kelseyjadeking" target="_blank">
-        Twitter
-      </a>
-    
-      <a href="https://slubillikens.com/sports/womens-tennis/roster/kelsey-king/1007" target="_blank">
-        SLU Tennis
-      </a>
-    </div>
-  </head>
 
   <body>
+    <div class="items">
+      <div class="banner">
+        <img src="/thumbnails/kelsey.jpeg" alt="Kelsey King headshot" class="banner-image">
+      </div>
+    
+      <div class="name">
+        Kelsey King
+      </div>
+    
+      <div class="social-icons">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/kelseyjking" target="_blank">
+          GitHub
+        </a>
+      
+        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/kelseyjadeking/" target="_blank">
+          LinkedIn
+        </a>
+      
+        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://twitter.com/kelseyjadeking" target="_blank">
+          Twitter
+        </a>
+      
+        <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+        <a href="https://slubillikens.com/sports/womens-tennis/roster/kelsey-king/1007" target="_blank">
+          SLU Tennis
+        </a>
+      </div>
 
+      <div class="link">
+        <img class="thumbnail" src="/thumbnails/Splunk Circle.jpg"alt="Splunk Circle Logo" >
 
+        <a target="_blank" href="https://www.splunk.com/en_us/blog/splunklife/meet-the-splunktern-kelsey-king.html">
+        Meet the Splunktern: Kelsey King
+        </a>
+      </div>
 
+      <div class="link">
+        <img class="thumbnail" src="/thumbnails/Pinterest.png" alt="Pinterest Circle Logo">
 
-
-<div class="link">
-  <img src="/thumbnails/Splunk Circle.jpg" alt="Splunk Circle Logo" class="thumbnails-image">
-  <style>
-    .thumbnails-image {
-      width: 48px;
-      height: 48px;
-      border-radius: 48px;
-      object-fit: cover;
-    }
-  </style>
-  <a target="_blank" href="https://www.splunk.com/en_us/blog/splunklife/meet-the-splunktern-kelsey-king.html">
-  Meet the Splunktern: Kelsey King
-  </a>
-</div>
-
-<div class="link">
-  <img src="/thumbnails/Pinterest.png" alt="Pinterest Circle Logo" class="thumbnails-image">
-  <style>  
-  .thumbnails-image {
-      width: 48px;
-      height: 48px;
-      border-radius: 48px;
-      object-fit: cover;
-    }
-  </style>  
-  <a target="_blank" href="https://www.pinterest.com/kelseyjadeking/">
-  Check out what I've been Pinning!
-  </a>
-</div>
-
-</body>
+        <a target="_blank" href="https://www.pinterest.com/kelseyjadeking/">
+        Check out what I've been Pinning!
+        </a>
+      </div>
+    </div>
+  </body>
 
 </html>
